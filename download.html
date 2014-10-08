@@ -1,6 +1,11 @@
 ---
 layout: default
+title: Download
+permalink: download/
 ---
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
 		<div class="container">
 
@@ -8,24 +13,24 @@ layout: default
 
 				<div class="block-left">
 					<h1>Get Scrapy</h1>
-					<p>Need help setting it up? Check the <a href="http://doc.scrapy.org/en/latest/intro/install.html">Scrapy installation guide</a> for the <a href="http://doc.scrapy.org/en/latest/intro/install.html#pre-requisites">requirements</a> and info on how to install in several platforms (Linux, Windows, Mac OS X, etc).
+					<p>Need help setting it up? Check the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html">Scrapy installation guide</a> for the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/install.html#pre-requisites">requirements</a> and info on how to install in several platforms (Linux, Windows, Mac OS X, etc).
 					</p>
 				</div>
 
 				<div class="block-right">
 					<div class="big-button">
 						<h2>Download latest version:</h2>
-						<p> <i class="fa fa-download"> </i> Scrapy 0.24 </p>
+						<p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
 						<a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-						<a href="http://doc.scrapy.org/en/latest/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-						<a href="https://github.com/scrapy/scrapy/tarball/0.24"><button>Tarball</button></a>
-						<a href="https://github.com/scrapy/scrapy/zipball/0.24"><button>Zip</button></a>
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
+						<a href="https://github.com/scrapy/scrapy/tarball/{{ stable.rtd }}"><button>Tarball</button></a>
+						<a href="https://github.com/scrapy/scrapy/zipball/{{ stable.rtd }}"><button>Zip</button></a>
 					</div>
 					<div class="developer-branch">
 						<i class="fa fa-code-fork"></i>
 						<p>You can also download <br /><span class="highlight">the development branch</span></p>
-						<a href="https://github.com/scrapy/scrapy/tarball/master"><button>Tarball</button></a>
-						<a href="https://github.com/scrapy/scrapy/zipball/master"><button>Zip</button></a>
+						<a href="https://github.com/scrapy/scrapy/tarball/{{ devel.rtd }}"><button>Tarball</button></a>
+						<a href="https://github.com/scrapy/scrapy/zipball/{{ devel.rtd }}"><button>Zip</button></a>
 					</div>
 				</div>
 
@@ -35,8 +40,8 @@ layout: default
 		<div class="third-row-down">
 			<div class="container">
 				<div class="block-left">
-					<a href="https://github.com/scrapy/scrapy/archive/0.22.zip">
-						<h2 class="float">Looking for an old release? <br /> Download Scrapy 0.22</h2>
+					<a href="https://github.com/scrapy/scrapy/archive/{{ oldstable.rtd }}.zip">
+						<h2 class="float">Looking for an old release? <br /> Download Scrapy {{ oldstable.rtd }}</h2>
 						<i class="fa fa-archive fa-3x"></i>
 					</a>
 					<p>Or you can find even older releases and changes here:</p>
@@ -51,9 +56,9 @@ layout: default
 
 				<div class="block-right">
 					<h2>Want to contribute <br /> to Scrapy?</h2>
-					<p>Don't forget to check the <a href="http://doc.scrapy.org/en/master/contributing.html">Contributing Guidelines and the <a href="http://doc.scrapy.org/en/master/">Development Documentation online</a>.
-						<a href="http://doc.scrapy.org/en/master/"><button>Doc</button></a>
-						<a href="http://doc.scrapy.org/en/master/contributing.html"><button>Guidelines</button></a>
+					<p>Don't forget to check the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing Guidelines and the <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/">Development Documentation online</a>.
+						<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/"><button>Doc</button></a>
+						<a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html"><button>Guidelines</button></a>
 				</div>
 			</div>
 		</div>
@@ -61,12 +66,12 @@ layout: default
 			<div class='fourth-row'>
 				<div class="container">
 					<div class="block-left">
-						<a href="http://doc.scrapy.org/en/latest/intro/overview.html">
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/overview.html">
 							<h2 class="float"><span class="regular">First time using Scrapy?</span> <br /> Get Scrapy at a glance</h2>
 						 	<i class="fa fa-file-text-o fa-3x"></i>
 						</a>
 						<p>You can also find very useful info at<br />
-							<a href="http://doc.scrapy.org/en/latest/intro/tutorial.html">
+							<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/intro/tutorial.html">
 								<i class="fa fa-external-link"></i>
 								<span class="big-font">The Scrapy Tutorial</span>
 							</a>
@@ -77,7 +82,7 @@ layout: default
 							<h2><span class="regular">Get the Source Code:</span> <br /> Scrapy on Github</h2>
 						 	<i class="fa fa-github fa-3x"></i>
 						</a>
-						<p><span class="big-font">What's new:</span> <br /> Read the <a href="http://doc.scrapy.org/en/latest/news.html">release notes</a> for latest changes.</p>
+						<p><span class="big-font">What's new:</span> <br /> Read the <a href="http://doc.scrapy.org/en/{{ stable.rtd }}/news.html">release notes</a> for latest changes.</p>
 					</div>
 				</div>
 			</div>

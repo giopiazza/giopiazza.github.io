@@ -1,6 +1,10 @@
 ---
 layout: default
+title: A Fast and Powerful Scraping and Web Crawling Framework
 ---
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
 
 <div class="container">
 
@@ -15,11 +19,11 @@ layout: default
         <div class="block-right">
           <div class="big-button">
             <h2>Download latest version:</h2>
-            <p> <i class="fa fa-download"> </i> Scrapy 0.24 </p>
+            <p> <i class="fa fa-download"> </i> Scrapy {{ stable.version }} </p>
             <a href="http://pypi.python.org/pypi/Scrapy"><button>PyPI</button></a>
-            <a href="http://doc.scrapy.org/en/latest/topics/ubuntu.html"><button>Ubuntu Package</button></a>
-            <a href="https://github.com/scrapy/scrapy/tarball/0.24"><button>Tarball</button></a>
-            <a href="https://github.com/scrapy/scrapy/zipball/0.24"><button>Zip</button></a>
+            <a href="http://doc.scrapy.org/en/{{ stable.version }}/topics/ubuntu.html"><button>Ubuntu Package</button></a>
+            <a href="https://github.com/scrapy/scrapy/tarball/{{ stable.version }}"><button>Tarball</button></a>
+            <a href="https://github.com/scrapy/scrapy/zipball/{{ stable.version }}"><button>Zip</button></a>
           </div>
         </div>
 
@@ -87,11 +91,11 @@ layout: default
             </ul>
           </div>
           <div class="block-right">
-            <a href="http://doc.scrapy.org/en/latest/intro/overview.html">
+            <a href="http://doc.scrapy.org/en/{{ stable.version }}/intro/overview.html">
               <h2><span class="regular">Want to know more?</span> <br /> Scrapy at a glance</h2>
               <i class="fa fa-file-text-o fa-3x"></i>
             </a>
-            <p>Wondering what Scrapy can do? <br /> <a href="companies.html">Meet the companies using Scrapy</a></p>
+            <p>Wondering what Scrapy can do? <br /> <a href="../companies/">Meet the companies using Scrapy</a></p>
           </div>
         </div>
       </div>

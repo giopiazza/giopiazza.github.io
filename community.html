@@ -1,6 +1,12 @@
 ---
 layout: default
+title: Community
+permalink: community/
 ---
+{% assign stable = site.data.scrapy.stable %}
+{% assign oldstable = site.data.scrapy.oldstable %}
+{% assign devel = site.data.scrapy.development %}
+
 		<div class="container">
 
 			<h1>Meet the Scrapy community</h1>
@@ -13,7 +19,7 @@ layout: default
 				</a>
 				<hr />
 				<p>
-					If you want to get involved and contribute patches or help documenting, start by reading <a href="http://doc.scrapy.org/en/latest/contributing.html">Contributing to Scrapy</a>.
+					If you want to get involved and contribute patches or help documenting, start by reading <a href="http://doc.scrapy.org/en/{{ devel.rtd }}/contributing.html">Contributing to Scrapy</a>.
 					All development happens on the <a href="https://github.com/scrapy/scrapy">Scrapy Github project</a>.
 				</p>
 				<a href="https://github.com/scrapy/scrapy">
@@ -84,29 +90,29 @@ layout: default
 			<div class='fourth-row'>
 				<div class="container">
 					<div class="block-left">
-						<a href="http://doc.scrapy.org/en/latest/faq.html">
+						<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/faq.html">
 							<h2 class="float"><span class="regular">Having trouble? We'd love to help!</span> <br />
 							Check the FAQ.</h2>
 						</a>
 						<p>For specific information you can check<br />
-								<a href="http://doc.scrapy.org/en/latest/genindex.html">
+								<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/genindex.html">
 									<i class="fa fa-external-link"></i>
 									<span class="big-font">The Index</span>
 								</a>
 								or
-								<a href="http://doc.scrapy.org/en/latest/py-modindex.html">
+								<a href="http://doc.scrapy.org/en/{{ stable.rtd }}/py-modindex.html">
 									<i class="fa fa-external-link"></i>
 									<span class="big-font">The Module Index</span>
 								</a>
 						</p>
 					</div>
 					<div class="block-right">
-						<a href="support.html">
+						<a href="../support/">
 							<h2><span class="regular">Commercial support?</span> <br /> Meet the Scrapy pros</h2>
-						 	<img src="img/scrapy-pros.png" />
+						 	<img src="../img/scrapy-pros.png" />
 						</a>
 						<p><span class="big-font">Who is using Scrapy?</span> <br />
-							<a href="jobs.html">Find companies and products that use Scrapy</a>.</p>
+							<a href="../companies/">Find companies and products that use Scrapy</a>.</p>
 					</div>
 				</div>
 			</div>
