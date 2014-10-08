@@ -784,6 +784,9 @@ dl, dd, ol, ul, figure {
 
 		hr {
 			clear:both;
+			border-color:$default-green;
+			margin-top:10px;
+			margin-bottom:10px;
 		}
 	}
 
