@@ -1,6 +1,6 @@
 # Site settings
 title: Scrapy - A Fast and Powerful Scraping and Web Crawling Framework
-url: "http://scrapt.org" # the base hostname & protocol for your site
+url: "http://scrapy.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
