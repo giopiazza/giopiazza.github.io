@@ -6,3 +6,15 @@ title: Scrapy - A Fast and Powerful Scraping and Web Crawling Framework
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
+
+navigation:
+- text: Download
+  url: /download.html
+- text: Documentation
+  url: /documentation.html
+- text: Community
+  url: /community.html
+- text: Companies
+  url: /companies.html
+- text: Commercial Support
+  url: /support.html

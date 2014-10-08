@@ -216,7 +216,7 @@ dl, dd, ol, ul, figure {
 		font-weight:normal;
 	}
 
-	.header ul li:hover, .header ul li.active {
+	.header ul li:hover, .header ul li.current {
 		color:#fff;
 		background-color: $default-green;
 	}
